@@ -1,0 +1,61 @@
+\documentclass[english,a4paper,oneside,11pt]{amsart}
+\usepackage{concrete}
+\usepackage{enumitem}
+\usepackage{phoenician}
+\usepackage{xstring}
+
+\DeclareRobustCommand{\phalphnum}[1]{
+	\IfEqCase{#1}{%
+		{1}{{\textphnc{a}}}%
+		{2}{{\textphnc{b}}}%
+		{3}{\textphnc{g}}%
+		{4}{\textphnc{d}}%
+		{5}{\textphnc{h}}
+		{6}{\textphnc{f}}
+		{7}{\textphnc{w}}
+		{8}{\textphnc{z}}
+		{9}{\textphnc{H}}
+		{10}{\textphnc{T}}
+		{11}{\textphnc{y}}
+		{12}{\textphnc{k}}
+		{13}{\textphnc{l}}
+		{14}{\textphnc{m}}
+		{15}{\textphnc{n}}
+		{16}{\textphnc{s}}
+		{17}{\textphnc{o}}
+		{18}{\textphnc{p}}
+		{19}{\textphnc{x}}
+		{20}{\textphnc{q}}
+		{21}{\textphnc{r}}
+		{22}{\textphnc{S}}
+		{23}{\textphnc{t}}
+	}[\PackageError{\phalphnum}{Undefined option to phalphnum: #1}{}]%
+}
+
+\begin{document}
+	\begin{enumerate}[label=\phalphnum{\arabic*})]
+		\item 
+		\item
+		\item 
+		\item
+		\item
+		\item 
+		\item
+		\item
+		\item 
+		\item
+		\item
+		\item 
+		\item
+		\item
+		\item 
+		\item
+		\item
+		\item 
+		\item
+		\item
+		\item 
+		\item
+		\item
+	\end{enumerate}
+\end{document}
